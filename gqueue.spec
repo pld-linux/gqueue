@@ -2,7 +2,7 @@ Summary:	gQueue is a Gnome2 frontend for Cups queues
 Summary(pl):	gQueue jest nak³adk± na Cupsa dla Gnome2
 Name:		gqueue
 Version:	0.8
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://web.tiscali.it/diegobazzanella/%{name}-%{version}.tar.bz2
@@ -13,8 +13,8 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	cups-devel
 BuildRequires:	gtk+2-devel
-Buildrequires:	libbonoboui-devel
-BuildRequires:	libgnomeui-devel
+Buildrequires:	libbonoboui-devel >= 2.3.3-2
+BuildRequires:	libgnomeui-devel >= 2.3.3.1-2
 BuildRequires:	rpm-build >= 4.1-13
 Requires:	cups
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
