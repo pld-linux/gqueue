@@ -30,6 +30,8 @@ gQueue jest nak³adk± na lpq i lprm pracuj±c± z kolejkami Cupsa.
 %setup -q -n %{name}
 %patch0 -p1
 
+mv po/{no,nb}.po
+
 %build
 rm -f missing mkinstalldirs depcomp install-sh missing COPYING INSTALL
 cp /usr/share/gettext/mkinstalldirs .
