@@ -13,7 +13,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	cups-devel
 BuildRequires:	gtk+2-devel
-Buildrequires:	libbonoboui-devel >= 2.4.0
+BuildRequires:	libbonoboui-devel >= 2.4.0
 BuildRequires:	libgnomeui-devel >= 2.4.0.1
 BuildRequires:	rpm-build >= 4.1-13
 Requires:	cups
