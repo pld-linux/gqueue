@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=gqueue
+Comment=Gnome2 frontend for Cups queues
+Comment[pl]=Nakładka na Cupsa dla Gnome2
+Exec=gqueue
+Terminal=0
+Icon=gqueue/gqueueicon.png
+Type=Application
+# vi: encoding=utf-8
