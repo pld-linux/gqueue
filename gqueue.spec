@@ -13,9 +13,11 @@ URL:		http://web.tiscali.it/diegobazzanella/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	cups-devel
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	libbonoboui-devel >= 2.4.0
 BuildRequires:	libgnomeui-devel >= 2.4.0.1
+BuildRequires:	pkgconfig
 BuildRequires:	rpm-build >= 4.1-13
 Requires:	cups
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
