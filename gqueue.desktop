@@ -6,4 +6,5 @@ Exec=gqueue
 Terminal=0
 Icon=gqueue/gqueueicon.png
 Type=Application
+Categories=GNOME;Application;System;
 # vi: encoding=utf-8
