@@ -1,12 +1,12 @@
 Summary:	gQueue is a GNOME2 frontend for Cups queues
 Summary(pl):	gQueue jest nak³adk± na Cupsa dla GNOME2
 Name:		gqueue
-Version:	0.9
+Version:	0.99.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://web.tiscali.it/diegobazzanella/%{name}-%{version}.tar.bz2
-# Source0-md5:	b6c9d1546cab97f44dd20809c8caf4a4
+# Source0-md5:	b5cf07a087986cd4cbb83ed26958d408
 Source1:	%{name}.desktop
 URL:		http://web.tiscali.it/diegobazzanella/
 BuildRequires:	autoconf
@@ -29,11 +29,13 @@ gQueue jest nak³adk± na lpq i lprm pracuj±c± z kolejkami Cupsa.
 %setup -q -n %{name}
 
 %build
-rm -f missing
+rm -f missing mkinstalldirs depcomp install-sh missing COPYING INSTALL
+cp /usr/share/gettext/mkinstalldirs .
 %{__aclocal}
-%{__autoconf}
+glib-gettextize --force --copy
 %{__autoheader}
-%{__automake}
+%{__automake} --add-missing
+%{__autoconf}
 %configure
 %{__make}
 
