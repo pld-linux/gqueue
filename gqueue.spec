@@ -1,7 +1,7 @@
 Summary:	gQueue is a Gnome2 frontend for Cups queues
 Summary(pl):	gQueue jest nak³adk± na Cupsa dla Gnome2
 Name:		gqueue
-Version:	0.7
+Version:	0.8
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
@@ -14,6 +14,7 @@ BuildRequires:	cups-devel
 BuildRequires:	gtk+2-devel
 Buildrequires:	libbonoboui-devel
 BuildRequires:	libgnomeui-devel
+BuildRequires:	rpm-build >= 4.1-13
 Requires:	cups
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,11 +38,13 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_applnkdir}/System/Administration
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT/%{_desktopdir}
 
-install %{SOURCE1} $RPM_BUILD_ROOT/%{_applnkdir}/System/Administration
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
+
+install %{SOURCE1} $RPM_BUILD_ROOT/%{_desktopdir}
 
 %find_lang %{name}
 
@@ -53,4 +56,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS
 %attr(755,root,root) %{_bindir}/*
 %{_pixmapsdir}/*
-%{_applnkdir}/System/Administration/*
+%{_desktopdir}/*
