@@ -6,6 +6,7 @@ Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://web.tiscali.it/diegobazzanella/%{name}-%{version}.tar.bz2
+# Source0-md5:	b9911ba2e76054be473445878dd76bed
 Source1:	%{name}.desktop
 URL:		http://web.tiscali.it/diegobazzanella/
 BuildRequires:	autoconf
