@@ -1,0 +1,204 @@
+diff -Nuard gqueue.orig/configure.in gqueue/configure.in
+--- gqueue.orig/configure.in	2003-12-23 12:52:21.000000000 +0100
++++ gqueue/configure.in	2004-02-25 00:03:58.835269552 +0100
+@@ -20,7 +20,7 @@
+ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE")
+ 
+ dnl Add the languages which your application supports here.
+-ALL_LINGUAS="it en fr es ru de pt nl et pl no sk sv"
++ALL_LINGUAS="it en fr es ru de pt nl et pl nb sk sv"
+ AM_GLIB_GNU_GETTEXT
+ 
+ AC_CHECK_LIB(socket,socket,
+diff -Nuard gqueue.orig/po/nb.po gqueue/po/nb.po
+--- gqueue.orig/po/nb.po	1970-01-01 01:00:00.000000000 +0100
++++ gqueue/po/nb.po	2004-02-25 00:03:02.732798424 +0100
+@@ -0,0 +1,92 @@
++# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++msgid ""
++msgstr ""
++"Project-Id-Version: PACKAGE VERSION\n"
++"POT-Creation-Date: 2003-01-07 16:34+0100\n"
++"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
++"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=ISO-8859-1\n"
++"Content-Transfer-Encoding: 8bit\n"
++
++#: ../src/main.c:98
++msgid "Stampante"
++msgstr "Skriver"
++
++#: ../src/main.c:104
++msgid "ID"
++msgstr ""
++
++#: ../src/main.c:110
++msgid "Utente"
++msgstr "Bruker"
++
++#: ../src/main.c:116
++msgid "Titolo"
++msgstr "Tittel"
++
++#: ../src/main.c:122
++msgid "Stato"
++msgstr "Status"
++
++#: ../src/callbacks.c:92
++msgid "In attesa"
++msgstr "I kø"
++
++#: ../src/callbacks.c:92
++msgid "In stampa"
++msgstr "Skriver ut"
++
++#: ../src/callbacks.c:115
++msgid "Stampante di default"
++msgstr "Standard Skriver"
++
++#: ../src/callbacks.c:116
++msgid "Tutte le stampanti"
++msgstr "Alle Skrivere"
++
++#: ../src/interface.c
++msgid "gtk-quit"
++msgstr "Avslutt"
++
++msgid "_File"
++msgstr "Fil"
++
++msgid "_Modifica"
++msgstr "Rediger"
++
++msgid "gtk-delete"
++msgstr "Slett"
++
++msgid "Ai_uto"
++msgstr "Hjelp"
++
++msgid "_Info"
++msgstr "Informasjon"
++
++msgid "Elimina"
++msgstr "Slett"
++
++msgid "Informazioni"
++msgstr "Informasjon"
++
++msgid "Esci"
++msgstr "Avslutt"
++
++msgid "Informazioni su GQUEUE"
++msgstr "Om GQUEUE"
++
++msgid "Chiudi"
++msgstr "Lukk"
++
++msgid "Versione"
++msgstr "Versjon"
++
++msgid "in system tray"
++msgstr "Vis på knapperaden"
+diff -Nuard gqueue.orig/po/no.po gqueue/po/no.po
+--- gqueue.orig/po/no.po	2003-10-05 17:21:34.000000000 +0200
++++ gqueue/po/no.po	1970-01-01 01:00:00.000000000 +0100
+@@ -1,92 +0,0 @@
+-# SOME DESCRIPTIVE TITLE.
+-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+-# This file is distributed under the same license as the PACKAGE package.
+-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+-#
+-#, fuzzy
+-msgid ""
+-msgstr ""
+-"Project-Id-Version: PACKAGE VERSION\n"
+-"POT-Creation-Date: 2003-01-07 16:34+0100\n"
+-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+-"Language-Team: LANGUAGE <LL@li.org>\n"
+-"MIME-Version: 1.0\n"
+-"Content-Type: text/plain; charset=ISO-8859-1\n"
+-"Content-Transfer-Encoding: 8bit\n"
+-
+-#: ../src/main.c:98
+-msgid "Stampante"
+-msgstr "Skriver"
+-
+-#: ../src/main.c:104
+-msgid "ID"
+-msgstr ""
+-
+-#: ../src/main.c:110
+-msgid "Utente"
+-msgstr "Bruker"
+-
+-#: ../src/main.c:116
+-msgid "Titolo"
+-msgstr "Tittel"
+-
+-#: ../src/main.c:122
+-msgid "Stato"
+-msgstr "Status"
+-
+-#: ../src/callbacks.c:92
+-msgid "In attesa"
+-msgstr "I kø"
+-
+-#: ../src/callbacks.c:92
+-msgid "In stampa"
+-msgstr "Skriver ut"
+-
+-#: ../src/callbacks.c:115
+-msgid "Stampante di default"
+-msgstr "Standard Skriver"
+-
+-#: ../src/callbacks.c:116
+-msgid "Tutte le stampanti"
+-msgstr "Alle Skrivere"
+-
+-#: ../src/interface.c
+-msgid "gtk-quit"
+-msgstr "Avslutt"
+-
+-msgid "_File"
+-msgstr "Fil"
+-
+-msgid "_Modifica"
+-msgstr "Rediger"
+-
+-msgid "gtk-delete"
+-msgstr "Slett"
+-
+-msgid "Ai_uto"
+-msgstr "Hjelp"
+-
+-msgid "_Info"
+-msgstr "Informasjon"
+-
+-msgid "Elimina"
+-msgstr "Slett"
+-
+-msgid "Informazioni"
+-msgstr "Informasjon"
+-
+-msgid "Esci"
+-msgstr "Avslutt"
+-
+-msgid "Informazioni su GQUEUE"
+-msgstr "Om GQUEUE"
+-
+-msgid "Chiudi"
+-msgstr "Lukk"
+-
+-msgid "Versione"
+-msgstr "Versjon"
+-
+-msgid "in system tray"
+-msgstr "Vis på knapperaden"
