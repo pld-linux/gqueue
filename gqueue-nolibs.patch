@@ -1,0 +1,23 @@
+--- gqueue/configure.in.orig	2005-06-02 21:44:23.000000000 +0200
++++ gqueue/configure.in	2005-06-02 21:48:28.000000000 +0200
+@@ -23,18 +23,8 @@
+ ALL_LINGUAS="it en fr es ru de pt nl et pl nb sk sv"
+ AM_GLIB_GNU_GETTEXT
+ 
+-AC_CHECK_LIB(socket,socket,
+-if test "$uname" != "IRIX"; then
+-	LIBS="-lsocket $LIBS"
+-else
+-	echo "Not using -lsocket since you are running IRIX."
+-fi)
+-AC_CHECK_LIB(nsl,gethostbyaddr,
+-if test "$uname" != "IRIX"; then
+-	LIBS="-lnsl $LIBS"
+-else
+-	echo "Not using -lnsl since you are running IRIX."
+-fi)
++AC_SEARCH_LIBS(socket,socket)
++AC_SEARCH_LIBS(gethostbyaddr,nsl)
+ 
+ AC_CHECK_LIB(cups,httpConnect)
+ 
