@@ -1,5 +1,5 @@
 Summary:	gQueue is a GNOME2 frontend for Cups queues
-Summary(pl):	gQueue jest nak³adk± na Cupsa dla GNOME2
+Summary(pl.UTF-8):   gQueue jest nakÅ‚adkÄ… na Cupsa dla GNOME2
 Name:		gqueue
 Version:	0.99.1
 Release:	3
@@ -24,8 +24,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 gQueue is a GNOME2 frontend for lpq and lprm working with Cups queues.
 
-%description -l pl
-gQueue jest nak³adk± na lpq i lprm pracuj±c± z kolejkami Cupsa.
+%description -l pl.UTF-8
+gQueue jest nakÅ‚adkÄ… na lpq i lprm pracujÄ…cÄ… z kolejkami Cupsa.
 
 %prep
 %setup -q -n %{name}
