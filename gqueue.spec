@@ -1,5 +1,5 @@
 Summary:	gQueue is a GNOME2 frontend for Cups queues
-Summary(pl.UTF-8):   gQueue jest nakładką na Cupsa dla GNOME2
+Summary(pl.UTF-8):	gQueue jest nakładką na Cupsa dla GNOME2
 Name:		gqueue
 Version:	0.99.1
 Release:	3
