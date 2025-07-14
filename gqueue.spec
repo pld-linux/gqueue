@@ -29,8 +29,8 @@ gQueue jest nakładką na lpq i lprm pracującą z kolejkami Cupsa.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 mv po/{no,nb}.po
 
